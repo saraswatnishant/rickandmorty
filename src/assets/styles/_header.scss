@@ -1,0 +1,20 @@
+.rickmrty-header {
+    display: flex;
+    align-items: center;
+    background-color: $header-background !important;
+    height: 3rem;
+
+    @include for-phone-only {    
+        .rickmrty-search-form-wrapper{
+            display: none;
+        }
+     }
+}
+
+
+// partial imports
+@import './toggleButton.scss';
+@import './logo.scss';
+@import './searchInput.scss';
+@import './userMenu.scss';
+@import './nav.scss';

@@ -1,0 +1,33 @@
+.user-menu-wrapper {
+    position: relative;
+    cursor: pointer;
+    .show {
+        display: block;
+    }
+
+    .rickmrty-user-menu {
+        display: flex;
+        align-items: center;
+
+        & img {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            margin: 0 0.4rem 0 0;
+        }
+    }
+
+    .dropdown-menu {
+        font-size: 0.8rem;
+        background: $header-background none repeat scroll 0 0;
+        border-color: $header-background;
+        border: none;
+        margin-top: -2px;
+    }
+
+    // &:hover {
+    //     .dropdown-menu {
+    //         @extend .show;
+    //     }
+    // }
+}

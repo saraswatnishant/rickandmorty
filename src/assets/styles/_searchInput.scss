@@ -1,0 +1,22 @@
+.rickmrty-search-form-wrapper {
+    display: inline-block;
+    max-width: 50%;
+    width: 30rem;
+    margin: 0 auto;
+
+    & .search-char {
+        background: #121212 none repeat scroll 0 0;
+        border: 1px solid #303030;
+        font-size: 14px;
+        color: $text-color;
+    }
+
+    & .search-btn {
+        background: #303030 none repeat scroll 0 0;
+        border: none;
+
+        & i {
+            color: #828282;
+        }
+    }
+}

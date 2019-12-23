@@ -1,0 +1,76 @@
+.rickmrty-main {
+    padding: 1rem 0 0 14rem;
+
+    .search-results {
+        .container-fluid {
+            .row>div {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .main-search {
+        display: none;
+    }
+    .error-msg{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .main-header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        color:$text-color;
+        padding:  0 1rem 0.5rem 1rem;
+        align-items: center;
+
+        & > h2 {
+            font-weight: 300;
+            font-size: 1rem;
+        }
+
+        & .btn-secondary{
+            background-color: transparent;
+            border: none;
+            font-size: 0.7rem;
+        }
+
+        .dropdown-menu {
+            font-size: 0.8rem;
+            background: $header-background none repeat scroll 0 0;
+            border-color: $header-background;
+            border: none;
+            margin-top: -2px;
+            & > .dropdown-item {
+                color:$text-color;
+            }
+        }
+    }
+}
+
+.sidebar-hidden {
+    padding-left: 0rem;
+}
+
+@include for-phone-only {
+    .rickmrty-main {
+        padding-left: 0rem;
+
+        .main-search {
+            display: block;
+            margin-bottom: 1rem;
+
+            .rickmrty-search-form-wrapper {
+                display: block;
+                margin: auto;
+                width: 95%;
+                max-width: 100%;
+                // margin: 0 1rem;
+            }
+        }
+    }
+
+}
+
+@import './card.scss';

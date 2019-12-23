@@ -1,0 +1,35 @@
+.rickmrty-sidebar{
+    height: 100%;
+    position: fixed;
+    width: 14rem;
+    background: #1c1c1c;
+    color: $text-color;
+    padding: 2rem 1rem;
+    overflow: scroll;
+
+    .filter-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.6rem;
+        & > h2 {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+    .filter-wrapper{
+        margin-bottom: 2rem;
+    }
+    .clear-filter{
+        cursor: pointer;
+    }
+}
+
+@include for-phone-only {    
+    .rickmrty-sidebar{
+        position: absolute;
+        z-index: 10;
+    }
+ }
+
+@import './filter.scss';

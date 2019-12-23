@@ -1,0 +1,10 @@
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: $header-background;
+    background-color: $header-background;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color:$text-color;
+    text-decoration: none;
+    background-color: black;
+}

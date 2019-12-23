@@ -1,0 +1,16 @@
+.filter{
+    margin: 1rem 0;
+    h4{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    ul{
+        padding: 0;
+        list-style: none;
+        margin-bottom: 0;
+        & > li {
+            padding: 0.2rem 0;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@import './screen.scss';
+
+@include for-phone-only {    
+    .App{
+        position: relative;
+    }
+ }
+
+@import './variables.scss';
+@import './header.scss';
+@import './sidebar.scss';
+@import './result.scss';
+@import './override.scss';
