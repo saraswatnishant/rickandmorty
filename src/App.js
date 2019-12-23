@@ -101,7 +101,7 @@ class App extends Component {
         <div className="App">
           <Header onSearchFormSubmit={this.onSearchFormSubmit} />
           <Sidebar onFilterSelect={this.onFilterSelect} clearFilter={this.clearFilter} />
-          <Result result={result} />
+          <Result result={result} onSearchFormSubmit={this.onSearchFormSubmit} />
         </div>
       </SidebarContext.Provider>
     );

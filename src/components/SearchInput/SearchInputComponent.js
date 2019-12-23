@@ -5,7 +5,7 @@ const searchInputComponent = ({ handleSubmit, searchInputRef }) => (
     <div className="input-group">
       <input type="text" className="form-control search-char" placeholder="Search for character..." ref={searchInputRef} />
       <div className="input-group-append">
-        <button className="btn btn-light search-btn" type="button">
+        <button className="btn btn-light search-btn" type="button" onClick={handleSubmit}>
           <i className="fa fa-search" />
         </button>
       </div>

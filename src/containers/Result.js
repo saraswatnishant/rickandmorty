@@ -11,6 +11,7 @@ class Result extends Component {
       mainClasses: ['rickmrty-main'],
       result: undefined,
     };
+    this.searchInputRef = React.createRef();
   }
 
   // eslint-disable-next-line react/no-deprecated
@@ -31,6 +32,12 @@ class Result extends Component {
       this.setState({ result });
     }
 
+    handleSubmit = (e) => {
+      e.preventDefault();
+      const { onSearchFormSubmit } = this.props;
+      onSearchFormSubmit(this.searchInputRef.current.value);
+    }
+
     // eslint-disable-next-line react/static-property-placement
     static contextType = SidebarContext;
 
@@ -47,7 +54,10 @@ class Result extends Component {
       return (
         <main className={mainClasses.join(' ')}>
           <div className="main-search">
-            <SearchInputComponent />
+            <SearchInputComponent
+              handleSubmit={this.handleSubmit}
+              searchInputRef={this.searchInputRef}
+            />
           </div>
           <section className="search-results">
             {(result && result.results)
