@@ -89,9 +89,9 @@ class App extends Component {
         element.checked = false;
       });
     }
-    this.setState({applyFilters:{},filterPayload:''},()=>{
+    this.setState({ applyFilters: {}, filterPayload: '' }, () => {
       this.getData();
-    })
+    });
   }
 
   render() {
